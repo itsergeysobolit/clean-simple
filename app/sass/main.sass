@@ -1,0 +1,381 @@
+@import config
+
+.btn
+    display: block
+    text-decoration: none
+    font-family: quicksand
+    font-style: normal
+    font-weight: 700
+    font-size: 13px
+    line-height: 16px
+    color: #3A79FF
+    background-color: #D2E1FF
+    border-radius: 5px
+    padding: 15px
+    outline: 0
+    border: 0
+    text-transform: capitalize
+    cursor: pointer
+    transition: 0.3s
+
+    &:hover
+        background-color: lighten(#D2E1FF, 3%)
+        color: darken(#3A79FF, 20%)
+
+    &:active
+        background-color: darken(#D2E1FF, 10%)
+
+.header,
+.footer
+    padding: 20px 0
+
+    &__list,
+    &__social-list
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding: 13px 0
+
+    &__link
+        font-family: quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.05em
+        text-shadow: 0px 0px 5px #E6E6E6
+        color: #697CA6
+        text-decoration: none
+        text-transform: capitalize
+        cursor: pointer
+        transition: .3s
+
+        &:hover
+            color: #3D4F9F
+        &:focus
+            color: #3D4F9F
+
+    &__btn-link
+        text-align: center
+
+.intro
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%)
+    border: 1px solid #D8E3FE
+    padding-top: 100px
+    text-align: center
+
+    &__text
+        margin-bottom: 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #3D4F9F
+
+    &__title
+        margin-bottom: 30px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 60px
+        color: #3D4F9F
+
+        span
+            font-weight: 700
+
+    &__description
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 29px
+        letter-spacing: 0.03em
+
+.customers
+    background-color: #ffffff
+    padding: 60px 0
+
+.plan
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%)
+    padding: 150px 0
+    border: 1px solid #d8e3fe
+
+    &__text
+        margin-bottom: 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #3D4F9F
+
+    &__title
+        margin-bottom: 30px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 60px
+        color: #3D4F9F
+
+        span
+            font-weight: 700
+
+    &__description
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 29px
+        letter-spacing: 0.03em
+
+    img
+        background: #ffffff
+        box-shadow: 0px 50px 50px rgba(107, 119, 224, 0.05),
+        0px 50px 150px rgba(104, 113, 198, 0.05), 
+        0px 50px 200px rgba(53, 60, 115, 0.05), 
+        0px 20px 40px rgba(159, 162, 195, 0.15)
+
+        &:hover
+            animation: scaling 0.3s linear
+
+        @keyframes scaling
+            0%
+                transform: scale(1)
+            50%
+                transform: scale(0.9)
+            100%
+                transform: scale(1)
+
+.features
+    background-color: #ffffff
+    padding: 150px 0
+    text-align: center
+
+    &__text
+        margin-bottom: 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #3D4F9F
+
+    &__title
+        margin-bottom: 100px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 60px
+        color: #3D4F9F
+
+    .item__block,
+    .item__svg
+        transition: 0.5s
+
+    .item__block
+        width: 70px
+        height: 70px
+        margin: 0 auto
+        background-color: #E1EAFF
+        border-radius: 50%
+        box-shadow: 0px 3px 15px #9fbfff
+
+        svg
+            margin-top: 24px
+
+    .item__block:hover
+        background-color: #ffd7d7
+        box-shadow: 0px 3px 15px #ffa4a4
+        .item__svg
+            stroke: #d43f3f
+
+    .item__title
+        margin: 25px 0
+        font-family: quicksand
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 25px
+        color: #4074F8
+
+    .item__description
+        font-family: quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 11px
+        line-height: 19px
+        color: #ADB3CB
+
+    &__buttons
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__btn-read
+        background-color: #FFD7D7
+        color: #D43F3F
+
+        &:hover
+            background-color: lighten(#FFD7D7, 3%)
+            color: darken(#D43F3F, 20%)
+
+        &:active
+            background-color: darken(#FFD7D7, 10%)
+
+    &__line
+        height: 2px
+        width: 50px
+        background-color: #DAE4FE
+
+    &__inner-text
+        font-size: 11px
+        line-height: 19px
+        color: #ADB3CB
+
+.stats
+
+    &_pd
+        padding: 0
+
+    &__item
+        background-color: red
+        height: 200px
+
+    & > nth-child(2):last-child
+        background-color: #fff
+
+.get-started
+    padding: 100px 0
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+    text-align: center
+
+    &__text
+        margin-bottom: 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #ffffff
+
+    &__title
+        margin-bottom: 30px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 60px
+        color: #ffffff
+
+        span
+            font-weight: 700
+
+    &__description
+        margin-bottom: 50px
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 29px
+        letter-spacing: 0.03em
+        color: #ffffff
+
+    &__buttons
+        display: flex
+        justify-content: center
+        color: #ffffff
+
+    &__pricing-btn
+        font-family: quicksand
+        color: #565F82
+        background-color: #ffffff
+        box-shadow: 0px 5px 15px #6480E8
+        padding: 15px
+        border-radius: 1px
+
+    &__read-btn
+        color: #C7D3FF
+        border: 1px solid #A0B4FF
+        background-color: transparent
+        border-radius: 1px
+
+.newsletter
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%)
+    padding: 100px 0
+    border: 1px solid #d8e3fe
+
+    &__title
+        margin-bottom: 20px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 22px
+        color: #3D4F9F
+
+    &__description
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 29px
+        letter-spacing: 0.03em
+
+    &__form
+        display: flex
+        justify-content: space-evenly
+        padding: 30px 0
+
+    input
+        width: 300px
+        outline: 0
+        border: 0
+        padding: 20px
+        background-color: #EFEFF7
+        border-radius: 2px
+        font-family: Quicksand
+        font-style: normal
+        font-weight: bold
+        font-size: 13px
+        line-height: 16px
+        color: #666666
+        transition: 0.5s
+
+        &:hover
+            background-color: #d2e1ff
+            color: #0043d3
+
+    &__form-btn
+        background-color: #4D6CE1
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2)
+        color: #ffffff
+        padding: 20px 50px
+
+        &:hover
+            background-color: lighten(#4D6CE1, 5%)
+            color: #ffffff
+
+        &:active
+            background-color: darken(#4D6CE1, 20%)
+
+.footer
+
+    padding: 100px 0
+
+    &__copyright
+        margin-top: 50px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.05em
+        color: #AEB8D0
