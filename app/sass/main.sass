@@ -330,6 +330,8 @@
         color: #ADB3CB
 
 .stats
+    z-index: 100
+    position: relative
 
     &_pd
         padding: 0
@@ -365,12 +367,99 @@
         letter-spacing: 0.03em
 
 .blog
+    z-index: 100
+    position: relative
     background-color: blue
     height: 200px
 
 .quotes
-    background-color: blue
-    height: 200px
+    padding: 150px 0
+    z-index: 100
+    position: relative
+    border: 1px solid #d8e3fe
+    background: linear-gradient(180deg,#f4f7ff 0,#f1f5ff 100%)
+
+    &__text
+        margin-bottom: 30px
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #3D4F9F
+
+    &__title
+        margin-bottom: 30px
+        font-family: quicksand
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 60px
+        color: #3D4F9F
+
+        span
+            font-weight: 700
+
+    &__description
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 29px
+        letter-spacing: 0.03em
+
+    &__item
+        position: relative
+        padding: 30px
+        width: 420px
+        height: 180px
+        background-color: #FFFFFF
+        border: 1px solid #D8E3FE
+        border-radius: 20px
+        box-shadow: 0px 5px 50px #F3F5FA
+
+    &__item-text
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: 0.03em
+        color: #676F95
+
+    &__picture
+        position: absolute
+        right: 45%
+
+    &__slider
+        min-width: 0
+
+    .slick-track
+        display: flex
+
+    .slick-list
+        overflow: hidden
+
+    // &__slider
+    //     min-width: 0
+    //     position: relative
+
+    //     .slick-dots
+    //         display: flex
+    //         align-items: center
+    //         justify-content: center
+
+    //         li
+    //             list-style: none
+    //         button
+    //             font-size: 0
+    //             width: 20px
+    //             height: 20px
+    //             background-color: #D1D6E3
+    //             border-radius: 50%
+    //             border: 0
+    //             outline: 0
 
 .get-started
     z-index: 100
@@ -505,3 +594,42 @@
         line-height: 15px
         letter-spacing: 0.05em
         color: #AEB8D0
+
+// .quotes__slider
+//     min-width: 0
+//     position: relative
+//     padding: 0 50px
+
+// .slick-track
+//     display: flex
+//     align-items: flex-start
+
+// .quotes__slider .slick-arrow
+//     position: absolute
+//     top: 50%
+//     z-index: 10
+//     font-size: 0
+//     width: 22px
+//     height: 50px
+//     border: 0
+//     margin-top: -25px
+
+//     &.slick-prev
+//         left: 0
+//         background: url(../img/arrow-prev.png) 0 0 / 100% no-repeat
+//         transition: 0.3s
+//     &:hover
+//         opacity: 0.6
+
+//     &:focus
+//         outline: 0
+
+//     &.slick-next
+//         right: 0
+//         background: url(../img/arrow-next.png) 0 0 / 100% no-repeat
+//         transition: 0.3s
+//     &:hover
+//         opacity: 0.6
+
+//     &:focus
+//         outline: 0
