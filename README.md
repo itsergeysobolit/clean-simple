@@ -1,4 +1,4 @@
-# RIGHT-CHOICE
+# CLEAN-SIMPLE
 **[View Live Preview](https://itsergeysobolit.github.io/clean-simple/app/index.html)**
 
 ## Table of contents
