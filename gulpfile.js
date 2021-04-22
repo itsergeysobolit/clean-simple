@@ -35,16 +35,11 @@ let paths = {
 
 	cssOutputName: 'app.min.css',
 	jsOutputName: 'app.min.js',
-
 }
 
 // LOGIC
 
 const { src, dest, parallel, series, watch, } = require('gulp');
-const sass = require('gulp-sass');
-const scss = require('gulp-sass');
-const less = require('gulp-less');
-const styl = require('gulp-stylus');
 const cleancss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
@@ -113,21 +108,6 @@ function startwatch() {
 	watch(baseDir + '/**/*.{' + fileswatch + '}', { usePolling: true }).on('change', browserSync.reload);
 	watch([baseDir + '/js/**/*.js', '!' + paths.scripts.dest + '/*.min.js'], { usePolling: true }, scripts);
 }
-
-function exportApp() {
-	let BuildHtml = src('app/index.html')
-		.pipe(dest('dist'));
-
-	let BuildCss = src('app/css/app.min.css')
-		.pipe(dest('dist/css'));
-
-	let BuildJs = src('app/js/app.min.js')
-		.pipe(dest('dist/js'));
-
-	let BuildImg = src('app/img/**/*.*')
-		.pipe(dest('dist/img'));
-}
-
 
 exports.browsersync = browsersync;
 exports.assets = series(cleanimg, styles, scripts, images);
